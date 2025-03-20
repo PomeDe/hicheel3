@@ -109,7 +109,7 @@ export default function Home() {
           />
           <button className="" onClick={() => setTogle(!togle)}>Toggle</button>
       </div>
-      {togle ? (<div className="grid grid-cols-4 gap-24">
+      {togle ? (<div className="grid gap-10">
       {filtered.length >0 ? (
       filtered.map((element) => (
           <div

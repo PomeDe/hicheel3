@@ -96,7 +96,7 @@ export default function Home() {
   const handleSearch = (e) =>{
     setVal(e.target.value);
   };
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   return (
 <div className="p-10 bg-white w-screen h-screen">
       <div className="flex flex-row w-full mx-auto mb-5 justify-between">
@@ -109,7 +109,7 @@ export default function Home() {
           />
           <button className="" onClick={() => setTogle(!togle)}>Toggle</button>
       </div>
-      {togle ? (<div className="grid grid-cols-4 gap-24">
+      {togle ? (<div className="grid grid-cols-4 lg-grid-cols-5 gap-24">
       {filtered.length >0 ? (
       filtered.map((element) => (
           <div
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
           </div>
         ))):(<p className="text-red-500 text-center text-xl col-span-full">Can't find the user</p>)}
-      </div>): (<div className="grid grid-cols-2  w-full">
+      </div>): (<div className="grid grid-cols-2   w-full">
       {filtered.length >0 ? (
       filtered.map((element) => (
           <div
